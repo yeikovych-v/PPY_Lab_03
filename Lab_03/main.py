@@ -1,6 +1,7 @@
 import math
 from Lab_03.generator.square_generator import SquareGenerator, InvalidRangeException
-from Lab_03.generator.cubic_generator import CubicGenerator
+from Lab_03.generator.cubic_generator import CubicGenerator, InvalidSquareRangeException
+
 
 # TASK 01
 print("TASK 01:")
@@ -45,3 +46,11 @@ except InvalidRangeException:
 # TASK 08
 print("TASK 08:")
 print(CubicGenerator(2, 11).cubes_from_range())
+
+
+# TASK 09
+print("TASK 09:")
+try:
+    print(CubicGenerator(5, 1).squares_from_range())
+except InvalidSquareRangeException:
+    print("InvalidSquareRangeException was thrown.")
