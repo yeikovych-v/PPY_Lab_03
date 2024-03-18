@@ -1,5 +1,5 @@
 import math
-from square_generator import SquareGenerator, InvalidRangeException
+from Lab_03.square_generator.square_generator import SquareGenerator, InvalidRangeException
 
 
 # TASK 01
